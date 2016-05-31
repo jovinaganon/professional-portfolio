@@ -1,0 +1,346 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------- */
+
+
+body {
+	width: 100%;
+}
+
+@font-face {
+    font-family: 'beyno';
+    src: url('../fonts/benyo/beyno-webfont.eot');
+    src: url('../fonts/beyno/beyno-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/beyno/beyno-webfont.woff2') format('woff2'),
+         url('../fonts/beyno/beyno-webfont.woff') format('woff'),
+         url('../fonts/beyno/beyno-webfont.ttf') format('truetype'),
+         url('../fonts/beyno/beyno-webfont.svg#vertigoflfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+@font-face {
+    font-family: 'anders';
+    src: url('../fonts/anders/anders-webfont.eot');
+    src: url('../fonts/anders/anders-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/anders/anders-webfont.woff2') format('woff2'),
+         url('../fonts/anders/anders-webfont.woff') format('woff'),
+         url('../fonts/anders/anders-webfont.ttf') format('truetype'),
+         url('../fonts/anders/anders-webfont.svg#vertigoflfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+@font-face {
+    font-family: 'cantarell';
+    src: url('../fonts/cantarell/Cantarell-Regular-webfont.eot');
+    src: url('../fonts/cantarell/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cantarell/Cantarell-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/cantarell/Cantarell-Regular-webfont.woff') format('woff'),
+         url('../fonts/cantarell/Cantarell-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/cantarell/Cantarell-Regular-webfont.svg#vertigoflfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+nav {
+	width: 100%;
+	height: 130px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #21364b;
+	border-bottom: 2px solid white;
+}
+
+#name {
+	color: white;
+	font-size: 3em;
+	font-family: 'beyno';
+	padding-right: 50px;
+}
+
+.navBar {
+	padding-left: 50px;
+	display: flex;
+}
+
+.navItem {
+	color: white;
+	font-size: 1.5em;
+	font-family: 'cantarell';
+	padding-left: 25px;
+	padding-right: 25px;
+	text-decoration: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------ */
+
+#subHeader1 {
+	font-size: 3em;
+	font-family: 'beyno';
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+#line1 {
+	color: white;
+	font-size: 4em;
+	font-family: 'anders';
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid white;
+}
+#line2 {
+	color: white;
+	font-size: 4em;
+	font-family: 'anders';
+	text-align: center;
+}
+
+
+#headerSection {
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #21364b;
+	border-bottom: 2px solid white;
+}
+
+#bioSection {
+	width: 100%;
+	height: 730px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	background-color: #679895;
+	border-bottom: 2px solid white;
+}
+
+#leftBio {
+	width: 60%;
+}
+
+#rightBio {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bioText {
+	font-size: 1.5em;
+	font-family: 'cantarell';
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+#skillsSection {
+	width: 100%;
+	height: 730px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #21364b;
+}
+
+#leftSkills {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#rightSkills {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#subHeader2 {
+	color: white;
+	font-size: 3em;
+	font-family: 'beyno';
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	padding-right: 50px;
+}
+
+#skillsText {
+	color: white;
+	width: 95%;
+	font-size: 1.5em;
+	font-family: 'cantarell';
+	padding-top: 50px;
+	margin-right: 50px;
+	text-align: justify;
+}
+
+#skillsBox {
+	width: 522px;
+	height: 522px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------ */
+
+#workDescription {
+	color: white;
+	width: 50%;
+	font-size: 1.5em;
+	font-family: 'cantarell';
+	text-align: center;
+	padding-top: 50px;
+}
+
+.project {
+	width: 100%;
+	height: 730px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 2px solid white;
+}
+.pic {
+	padding-bottom: 25px;
+}
+.workCaption {
+	color: white;
+	font-size: 2em;
+	font-family: 'beyno';
+	padding-top: 25px;
+}
+.workKind {
+	color: white;
+	font-size: 1.5em;
+	font-family: 'beyno';
+	padding-top: 10px;
+}
+
+.project:nth-child(3) {
+	background-color: #f76160;
+}
+
+.project:nth-child(4) {
+	background-color: #f8c687;
+}
+
+.project:nth-child(5) {
+	background-color: #31355b;
+}
+
+.project:nth-child(6) {
+	background-color: #679895;
+}
+
+.project:nth-child(7) {
+	background-color: #66A7D5;
+}
+
+.project:nth-child(8) {
+	background-color: #21364b;
+}
+
+.project:nth-child(9) {
+	background-color: #f76160;
+}
+
+.project:nth-child(10) {
+	background-color: #f8c687;
+}
+
+.project:nth-child(11) {
+	background-color: #31355b;
+}
+
+.project:nth-child(12) {
+	background-color: #679895;
+}
+
+.project:nth-child(13) {
+	background-color: #66A7D5;
+}
+
+.project:nth-child(14) {
+	background-color: #21364b;
+}
+
+
+/* ------------------------------------------------------ */
+
+footer {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	background-color: black;
+}
+#footerName {
+	color: white;
+	font-family: 'cantarell';
+	margin-left: 20px;
+}
+#footerItem {
+	color: white;
+	font-family: 'cantarell';
+	margin-right: 20px;
+}
